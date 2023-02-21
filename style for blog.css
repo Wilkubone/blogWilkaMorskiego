@@ -1,0 +1,11 @@
+body{
+        width: 1000px;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: #98F5FF;
+}
+
+.header1{
+    background-color: #6495ED;
+    text-align: center;
+}
