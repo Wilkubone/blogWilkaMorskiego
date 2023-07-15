@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  /* aby lista nie miała podspodem kreski  zmień sobie kolor w spisie treści*/
+  a{
+    text-decoration: none;
+  }
+  #animacja{
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* tu zmiana pozycji */
+    width: 100%;
+    height: 100vh;
+    background: #76a4e9af;
+    overflow: hidden;
+    z-index: 0;
+  }
+  #animacja .air{
+    position: absolute;
+    margin-top: 10vh;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-image: url(wave.png);
+    background-size: 1000px 100px;
+  }
+  #animacja .air.air1{
+    animation: wave 30s linear infinite;
+    z-index: 1000;
+    opacity: 0.5;
+    animation-delay: 0s;
+    bottom: 0;
+  }
+  #animacja .air.air2{
+    animation: wave2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+  }
+  #animacja .air.air3{
+    animation: wave 30s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15px;
+  }
+  #animacja .air.air4{
+    animation: wave2 5s linear infinite;
+    z-index: 997;
+    opacity: 0.3;
+    animation-delay: -5s;
+    bottom: 20px;
+  }
+  @keyframes wave{
+    0%{
+      background-position-x: 0px; 
+    }
+    100%{
+      background-position-x: 1000px; 
+    }
+  }
+  @keyframes wave2{
+    0%{
+      background-position-x: 0px; 
+    }
+    100%{
+      background-position-x: -1000px; 
+    }
+  }
