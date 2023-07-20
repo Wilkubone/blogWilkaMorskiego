@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -13,7 +14,7 @@
     /* tu zmiana pozycji */
     width: 100%;
     height: 100vh;
-    background: #76a4e9af;
+    background: #74a6f3af;
     overflow: hidden;
     z-index: 0;
   }
@@ -24,7 +25,7 @@
     left: 0;
     width: 100%;
     height: 100px;
-    background-image: url(wave.png);
+    background-image: url(/images/wave.png);
     background-size: 1000px 100px;
   }
   #animacja .air.air1{
